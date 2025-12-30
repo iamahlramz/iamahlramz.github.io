@@ -740,6 +740,22 @@ section {
   border-color: var(--accent-primary);
 }
 
+.cert-badge {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cert-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
 .cert-logo {
   width: 48px;
   height: 48px;
