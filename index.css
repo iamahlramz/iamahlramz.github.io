@@ -84,32 +84,149 @@
 
 /* Light Theme */
 [data-theme="light"] {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
+  --bg-primary: #fafbfc;
+  --bg-secondary: #f0f4f8;
+  --bg-tertiary: #e8eef4;
   --bg-elevated: #ffffff;
 
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-tertiary: #94a3b8;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
   --text-inverse: #ffffff;
 
-  --border-primary: #e2e8f0;
-  --border-secondary: #cbd5e1;
+  --border-primary: #d0dae6;
+  --border-secondary: #b8c6d8;
 
-  --accent-primary: #2563eb;
-  --accent-secondary: #059669;
-  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+  --accent-primary: #1d4ed8;
+  --accent-secondary: #047857;
+  --accent-gradient: linear-gradient(135deg, #1d4ed8 0%, #047857 100%);
 
-  --card-bg: rgba(255, 255, 255, 0.9);
-  --card-border: rgba(226, 232, 240, 0.8);
-  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 
-  --header-overlay: linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.9) 100%);
+  --header-overlay: linear-gradient(135deg, rgba(250, 251, 252, 0.97) 0%, rgba(240, 244, 248, 0.95) 100%);
 
-  --cert-microsoft: #0078d4;
+  --cert-microsoft: #0067b8;
   --cert-databricks: #ff3621;
   --cert-github: #24292f;
+}
+
+/* Light Theme Enhancements */
+[data-theme="light"] .header {
+  background: var(--header-overlay),
+              radial-gradient(ellipse at 20% 80%, rgba(29, 78, 216, 0.08) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(4, 120, 87, 0.06) 0%, transparent 50%);
+}
+
+[data-theme="light"] .floating-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .header__stats {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .tech-stack {
+  background: var(--bg-secondary);
+  border-color: var(--border-primary);
+}
+
+[data-theme="light"] .tech-badge {
+  background: #ffffff;
+  border-color: var(--border-primary);
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .cert-card,
+[data-theme="light"] .project-card,
+[data-theme="light"] .service-card {
+  background: #ffffff;
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .cert-card:hover,
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .service-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-primary);
+}
+
+[data-theme="light"] .section-tag {
+  background: rgba(29, 78, 216, 0.1);
+  color: var(--accent-primary);
+}
+
+[data-theme="light"] .btn--primary {
+  background: var(--accent-gradient);
+  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.3);
+}
+
+[data-theme="light"] .btn--outline {
+  border-color: var(--border-secondary);
+  color: var(--text-primary);
+}
+
+[data-theme="light"] .btn--outline:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent-primary);
+}
+
+[data-theme="light"] .contact {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+}
+
+[data-theme="light"] .contact-form-wrapper {
+  background: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .footer {
+  background: var(--bg-secondary);
+  border-top-color: var(--border-primary);
+}
+
+[data-theme="light"] .back-to-top {
+  background: #ffffff;
+  border-color: var(--border-primary);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .modal__content {
+  background: #ffffff;
+}
+
+[data-theme="light"] .about-image__decoration {
+  background: var(--accent-gradient);
+  opacity: 0.15;
+}
+
+[data-theme="light"] .highlight {
+  background: var(--bg-tertiary);
+  border-color: var(--border-primary);
+}
+
+[data-theme="light"] .project-card__badge {
+  background: rgba(29, 78, 216, 0.1);
+  color: var(--accent-primary);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group textarea {
+  background: var(--bg-secondary);
+  border-color: var(--border-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="light"] .form-group input:focus,
+[data-theme="light"] .form-group textarea:focus {
+  background: #ffffff;
+  border-color: var(--accent-primary);
 }
 
 /* ============================================= */
