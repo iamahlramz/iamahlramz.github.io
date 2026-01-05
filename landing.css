@@ -285,9 +285,12 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-6) var(--container-padding);
+  padding: var(--space-6) 0;
   max-width: var(--container-max);
   margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  width: 100%;
 }
 
 .nav__brand {
