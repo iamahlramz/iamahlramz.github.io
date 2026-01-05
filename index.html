@@ -4,13 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-  <title>Allan Ramirez | Business Process Automation & Application Development</title>
-  <meta name="description" content="Business Process Automation Expert and Full-Stack Developer helping companies eliminate manual processes with Microsoft Power Platform and custom applications.">
-  <meta name="keywords" content="Business Process Automation, Power Platform, Power Automate, Power BI, React, TypeScript, Full Stack Developer" />
+  <title>Allan Ramirez | Developer & Consultant</title>
+  <meta name="description" content="Developer and consultant building tools for professionals. Creator of CertiHub, PH Tax Calculator, and PinoyBudget.">
+  <meta name="keywords" content="Allan Ramirez, iamahlramz, Developer, Consultant, CertiHub, Power BI, iOS Developer" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Allan Ramirez | Developer & Consultant" />
+  <meta property="og:description" content="Building tools for professionals and providing consulting services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iamahlramz.dev" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="landing.css" />
 </head>
 <body>
   <!-- Theme Toggle -->
@@ -31,302 +38,222 @@
     </svg>
   </button>
 
-  <header class="header" role="banner" id="top">
-    <nav class="nav" role="navigation">
+  <!-- Header / Hero -->
+  <header class="header">
+    <nav class="nav">
       <div class="nav__brand"><span class="nav__logo">AR</span></div>
       <ul class="nav__items">
-        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-        <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+        <li class="nav__item"><a href="#apps" class="nav__link">Apps</a></li>
         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+        <li class="nav__item"><a href="./portfolio/" class="nav__link nav__link--cta">Portfolio</a></li>
       </ul>
-      <button class="nav__mobile-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
     </nav>
 
-    <div class="header__content">
-      <div class="header__badge"><span class="badge-dot"></span>Available for Projects</div>
-      <h1 class="header__title">
-        <span class="title-line">Business Process</span>
-        <span class="title-line title-gradient">Automation Expert</span>
-      </h1>
-      <p class="header__subtitle">Transforming manual workflows into automated solutions with Microsoft Power Platform. Building full-stack applications that solve real business problems.</p>
-      <div class="header__cta">
-        <a href="#contact" class="btn btn--primary">
-          <span>Start a Project</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <a href="#projects" class="btn btn--outline">View My Work</a>
-      </div>
-      <div class="header__stats">
-        <div class="stat"><span class="stat__number" data-count="70">0</span><span class="stat__suffix">%</span><span class="stat__label">Time Saved</span></div>
-        <div class="stat__divider"></div>
-        <div class="stat"><span class="stat__number" data-count="400">0</span><span class="stat__suffix">%</span><span class="stat__label">Avg ROI</span></div>
-        <div class="stat__divider"></div>
-        <div class="stat"><span class="stat__number" data-count="10">0</span><span class="stat__suffix">+</span><span class="stat__label">Years Exp</span></div>
-      </div>
-    </div>
-
-    <div class="floating-cards">
-      <div class="floating-card floating-card--1">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        <span>Power Automate</span>
-      </div>
-      <div class="floating-card floating-card--2">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-        <span>Power BI</span>
-      </div>
-      <div class="floating-card floating-card--3">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        <span>React + TypeScript</span>
+    <div class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="title-line">Allan Ramirez</span>
+          <span class="title-line title-gradient">Developer & Consultant</span>
+        </h1>
+        <p class="hero__subtitle">Building tools for professionals and providing consulting services across multiple time zones.</p>
+        <div class="hero__cta">
+          <a href="#apps" class="btn btn--primary">
+            <span>View My Apps</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="./portfolio/" class="btn btn--outline">Consulting Services</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <main role="main">
-    <!-- Tech Stack -->
-    <section class="tech-stack">
-      <div class="container">
-        <div class="tech-stack__wrapper">
-          <span class="tech-stack__label">Tech Stack</span>
-          <div class="tech-stack__badges">
-            <span class="tech-badge">Power Automate</span>
-            <span class="tech-badge">Power BI</span>
-            <span class="tech-badge">Power Apps</span>
-            <span class="tech-badge">Dataverse</span>
-            <span class="tech-badge">React</span>
-            <span class="tech-badge">Next.js</span>
-            <span class="tech-badge">TypeScript</span>
-            <span class="tech-badge">PostgreSQL</span>
-            <span class="tech-badge">REST APIs</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section class="certifications" id="certifications">
+  <main>
+    <!-- Apps Section -->
+    <section class="apps" id="apps">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Credentials</span>
-          <h2 class="section-title">Professional Certifications</h2>
-          <p class="section-subtitle">Microsoft-certified in data analytics, AI, and automation technologies</p>
+          <span class="section-tag">Creations</span>
+          <h2 class="section-title">Apps I've Built</h2>
+          <p class="section-subtitle">Tools designed to solve real problems for professionals</p>
         </div>
-        <div class="cert-grid">
-          <div class="cert-card">
-            <div class="cert-badge"><img src="./images/badges/PL300.png" alt="PL-300 Power BI Data Analyst Badge" /></div>
-            <div class="cert-content"><span class="cert-code">PL-300</span><h3>Power BI Data Analyst</h3><p>Expert in designing scalable data models and creating impactful visualizations with Power BI.</p></div>
-            <a href="https://learn.microsoft.com/api/credentials/share/en-us/iamahlramz/69867A0F126144C3?sharingId=E7B43693786CAC10" target="_blank" class="cert-verified" title="View Credential"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></a>
-          </div>
-          <div class="cert-card">
-            <div class="cert-badge"><img src="./images/badges/PL500.png" alt="PL-500 Power Automate RPA Developer Badge" /></div>
-            <div class="cert-content"><span class="cert-code">PL-500</span><h3>Power Automate RPA Developer</h3><p>Advanced automation with cloud flows, desktop flows, and AI Builder integrations.</p></div>
-            <a href="https://learn.microsoft.com/api/credentials/share/en-us/iamahlramz/2EDB61A7064F5F66?sharingId=E7B43693786CAC10" target="_blank" class="cert-verified" title="View Credential"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></a>
-          </div>
-          <div class="cert-card">
-            <div class="cert-badge"><img src="./images/badges/AZ900.png" alt="AZ-900 Azure Fundamentals Badge" /></div>
-            <div class="cert-content"><span class="cert-code">AZ-900</span><h3>Azure Fundamentals</h3><p>Foundational knowledge of cloud concepts and Microsoft Azure services.</p></div>
-            <a href="https://learn.microsoft.com/api/credentials/share/en-us/iamahlramz/47E70A8E8905A2E0?sharingId=E7B43693786CAC10" target="_blank" class="cert-verified" title="View Credential"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></a>
-          </div>
-          <div class="cert-card">
-            <div class="cert-badge"><img src="./images/badges/AI900.png" alt="AI-900 Azure AI Fundamentals Badge" /></div>
-            <div class="cert-content"><span class="cert-code">AI-900</span><h3>Azure AI Fundamentals</h3><p>Core understanding of machine learning and AI concepts on Microsoft Azure.</p></div>
-            <a href="https://learn.microsoft.com/api/credentials/share/en-us/iamahlramz/AC96A510493430A7?sharingId=E7B43693786CAC10" target="_blank" class="cert-verified" title="View Credential"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></a>
-          </div>
-          <div class="cert-card">
-            <div class="cert-badge"><img src="./images/badges/DP900.png" alt="DP-900 Azure Data Fundamentals Badge" /></div>
-            <div class="cert-content"><span class="cert-code">DP-900</span><h3>Azure Data Fundamentals</h3><p>Core data concepts and Azure data services for analytics workloads.</p></div>
-            <a href="https://learn.microsoft.com/api/credentials/share/en-us/iamahlramz/69A46B0C29AE7CE3?sharingId=E7B43693786CAC10" target="_blank" class="cert-verified" title="View Credential"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Portfolio</span>
-          <h2 class="section-title">Client Projects</h2>
-          <p class="section-subtitle">Real-world solutions delivering measurable business impact</p>
-        </div>
-        <div class="projects-grid">
-          <!-- ServiceTitan Integration -->
-          <article class="project-card automation-gallery-trigger" data-slide="3">
-            <div class="project-card__badge">Enterprise Integration</div>
-            <div class="project-card__header">
-              <div class="project-icon project-icon--integration"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-              <div class="project-metrics"><span class="metric"><strong>400%</strong> ROI</span><span class="metric"><strong>1 FTE</strong> Saved</span></div>
-            </div>
-            <div class="project-card__content">
-              <h3>ServiceTitan to Xero Integration</h3>
-              <p>Complete bi-directional sync with real-time invoice processing for 100+ daily transactions. Eliminated full-time position through enterprise-grade automation.</p>
-              <div class="project-tech-stack"><span>Power Automate</span><span>Dataverse</span><span>Custom Connectors</span></div>
-            </div>
-            <div class="project-card__footer"><button class="btn btn--small btn--ghost">View Details</button></div>
-          </article>
-          <!-- Email Automation -->
-          <article class="project-card automation-gallery-trigger" data-slide="0">
-            <div class="project-card__header">
-              <div class="project-icon project-icon--automation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-              <div class="project-metrics"><span class="metric"><strong>97%</strong> Time Saved</span></div>
-            </div>
-            <div class="project-card__content">
-              <h3>Email Attachment Processing</h3>
-              <p>Automated daily sales data processing for multi-store retail. Eliminated 12.5 hours weekly of manual file handling.</p>
-              <div class="project-tech-stack"><span>Power Automate</span><span>SharePoint</span><span>Power BI</span></div>
-            </div>
-            <div class="project-card__footer"><button class="btn btn--small btn--ghost">View Details</button></div>
-          </article>
-          <!-- API Monitoring -->
-          <article class="project-card automation-gallery-trigger" data-slide="1">
-            <div class="project-card__header">
-              <div class="project-icon project-icon--monitoring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-              <div class="project-metrics"><span class="metric"><strong>99.9%</strong> Uptime</span></div>
-            </div>
-            <div class="project-card__content">
-              <h3>API Change Notifications</h3>
-              <p>Real-time monitoring system with instant Teams alerts preventing service disruptions and downtime.</p>
-              <div class="project-tech-stack"><span>HTTP Triggers</span><span>Teams</span></div>
-            </div>
-            <div class="project-card__footer"><button class="btn btn--small btn--ghost">View Details</button></div>
-          </article>
-        </div>
-        <div class="projects-cta">
-          <button class="btn btn--outline powerbi-gallery-trigger">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            View Power BI Dashboards
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Personal Projects -->
-    <section class="projects personal-projects" id="personal-projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Side Projects</span>
-          <h2 class="section-title">Personal Creations</h2>
-          <p class="section-subtitle">Open-source tools and apps built for the community</p>
-        </div>
-        <div class="projects-grid">
+        <div class="apps-grid">
           <!-- CertiHub -->
-          <article class="project-card project-card--featured">
-            <div class="project-card__badge">Native iOS + Web App</div>
-            <div class="project-card__header">
-              <div class="project-icon project-icon--app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-              <div class="project-tech-stack"><span>SwiftUI</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Claude AI</span></div>
+          <article class="app-card app-card--featured">
+            <div class="app-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
             </div>
-            <div class="project-card__content">
-              <h3>CertiHub</h3>
-              <p class="project-tagline">Master Your Certification Exams</p>
-              <p>Practice for Microsoft, GitHub, and cloud certification exams with 3,000+ AI-generated questions across 16 certifications. Features adaptive difficulty levels (Easy to Nightmare), exam readiness scoring, topic performance analytics, and detailed explanations with source documentation links.</p>
-              <div class="project-features"><span>Native iOS App</span><span>4 Difficulty Levels</span><span>Readiness Scoring</span><span>Pro Subscription</span></div>
+            <div class="app-card__content">
+              <div class="app-card__badges">
+                <span class="badge badge--ios">iOS App</span>
+                <span class="badge badge--web">Web App</span>
+              </div>
+              <h3 class="app-card__title">CertiHub</h3>
+              <p class="app-card__tagline">Master Your Certification Exams</p>
+              <p class="app-card__description">Practice for Microsoft, GitHub, and cloud certification exams with 3,000+ AI-generated questions across 16 certifications.</p>
+              <div class="app-card__features">
+                <span>4 Difficulty Levels</span>
+                <span>Readiness Scoring</span>
+                <span>Detailed Explanations</span>
+              </div>
             </div>
-            <div class="project-card__footer">
+            <div class="app-card__footer">
               <a href="https://iamahlramz.github.io/certihub-pages/" class="btn btn--small btn--primary" target="_blank">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
-              <span class="project-status project-status--coming">iOS App Coming Soon</span>
+              <span class="app-status app-status--soon">iOS Coming Soon</span>
             </div>
           </article>
+
           <!-- PH Tax Calculator -->
-          <article class="project-card project-card--featured">
-            <div class="project-card__badge">Public Web Tool</div>
-            <div class="project-card__header">
-              <div class="project-icon project-icon--app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-              <div class="project-tech-stack"><span>Next.js</span><span>TypeScript</span><span>React</span><span>Tailwind CSS</span></div>
+          <article class="app-card">
+            <div class="app-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
             </div>
-            <div class="project-card__content">
-              <h3>PH Tax Calculator</h3>
-              <p class="project-tagline">Philippine Income Tax Made Simple</p>
-              <p>Free tax calculator for Filipino taxpayers with multiple income sources. Supports TRAIN Law 2023+ brackets, mixed income earners (employment + business/freelancing), automatic 8% vs Graduated regime comparison, and provides personalized tax-saving recommendations.</p>
-              <div class="project-features"><span>TRAIN Law 2023+</span><span>Mixed Income Support</span><span>8% vs Graduated</span><span>Privacy-First</span></div>
+            <div class="app-card__content">
+              <div class="app-card__badges">
+                <span class="badge badge--web">Web App</span>
+                <span class="badge badge--free">Free</span>
+              </div>
+              <h3 class="app-card__title">PH Tax Calculator</h3>
+              <p class="app-card__tagline">Philippine Income Tax Made Simple</p>
+              <p class="app-card__description">Calculate your Philippine income tax with support for multiple income sources, TRAIN Law 2023+ brackets, and 8% vs Graduated comparison.</p>
+              <div class="app-card__features">
+                <span>TRAIN Law 2023+</span>
+                <span>Mixed Income</span>
+                <span>Privacy-First</span>
+              </div>
             </div>
-            <div class="project-card__footer">
+            <div class="app-card__footer">
               <a href="https://iamahlramz.github.io/ph-tax-calculator/" class="btn btn--small btn--primary" target="_blank">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 Try It Free
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
-              <a href="https://github.com/iamahlramz/ph-tax-calculator" class="btn btn--small btn--ghost" target="_blank">View Source</a>
+              <a href="https://github.com/iamahlramz/ph-tax-calculator" class="btn btn--small btn--ghost" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Source
+              </a>
             </div>
           </article>
+
           <!-- PinoyBudget -->
-          <article class="project-card project-card--featured">
-            <div class="project-card__badge">Native iOS App</div>
-            <div class="project-card__header">
-              <div class="project-icon project-icon--app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-              <div class="project-tech-stack"><span>SwiftUI</span><span>Core Data</span><span>iOS</span></div>
+          <article class="app-card">
+            <div class="app-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
             </div>
-            <div class="project-card__content">
-              <h3>PinoyBudget</h3>
-              <p class="project-tagline">Personal Finance Tracker for Filipinos</p>
-              <p>Track your income, expenses, credit cards, and bills in Philippine Peso. Features dashboard overview with net worth visualization, credit card statement tracking, transaction history with categories, bill reminders, and complete privacy with offline-first local storage.</p>
-              <div class="project-features"><span>Peso Currency</span><span>Credit Card Tracking</span><span>Bill Reminders</span><span>100% Offline</span></div>
+            <div class="app-card__content">
+              <div class="app-card__badges">
+                <span class="badge badge--ios">iOS App</span>
+              </div>
+              <h3 class="app-card__title">PinoyBudget</h3>
+              <p class="app-card__tagline">Personal Finance for Filipinos</p>
+              <p class="app-card__description">Track income, expenses, credit cards, and bills in Philippine Peso. 100% offline with complete privacy.</p>
+              <div class="app-card__features">
+                <span>Peso Currency</span>
+                <span>Credit Cards</span>
+                <span>Bill Reminders</span>
+              </div>
             </div>
-            <div class="project-card__footer">
+            <div class="app-card__footer">
               <a href="https://iamahlramz.github.io/pinoybudget/" class="btn btn--small btn--primary" target="_blank">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 Learn More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
-              <span class="project-status project-status--coming">iOS App Coming Soon</span>
+              <span class="app-status app-status--soon">Coming Soon</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
+    <!-- Services Section -->
     <section class="services" id="services">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">What I Offer</span>
-          <h2 class="section-title">Services</h2>
-        </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-            <h3>Power Platform Automation</h3>
-            <p>Custom workflow automation using Microsoft Power Automate. Connect your business systems and eliminate manual processes.</p>
-            <ul class="service-list"><li>Workflow Design & Implementation</li><li>System Integration & API Connections</li><li>Error Handling & Monitoring</li><li>Process Optimization</li></ul>
+        <div class="services-content">
+          <div class="services-info">
+            <span class="section-tag">Consulting</span>
+            <h2 class="section-title">Professional Services</h2>
+            <p class="services-description">Specializing in Power BI, Business Intelligence, and Microsoft Power Platform development. Helping businesses across the US, UK, and Australia eliminate manual processes and make data-driven decisions.</p>
+            <div class="services-highlights">
+              <div class="highlight">
+                <span class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </span>
+                <span>Power BI Development</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </span>
+                <span>Process Automation</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </span>
+                <span>System Integration</span>
+              </div>
+            </div>
+            <a href="./portfolio/" class="btn btn--primary btn--large">
+              <span>View Full Portfolio</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
           </div>
-          <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-            <h3>End-to-End Power BI Development</h3>
-            <p>Complete Power BI solutions from data modeling to deployment. Build scalable, interactive dashboards that drive business decisions.</p>
-            <ul class="service-list"><li>Data Modeling & DAX Development</li><li>Custom Visual Design</li><li>Row-Level Security Setup</li><li>Workspace & Gateway Configuration</li></ul>
-          </div>
-          <div class="service-card">
-            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-            <h3>Report Migration</h3>
-            <p>Transform Excel spreadsheets into interactive Power BI dashboards with real-time data and automated refresh.</p>
-            <ul class="service-list"><li>Excel to Power BI Migration</li><li>Legacy Report Conversion</li><li>Data Source Consolidation</li><li>Automated Refresh Setup</li></ul>
+          <div class="services-stats">
+            <div class="stat-card">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Microsoft Certs</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">70%</span>
+              <span class="stat-label">Time Saved</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">400%</span>
+              <span class="stat-label">Avg ROI</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-image"><img src="./images/allan-ramirez-fun.jpg" alt="Allan Ramirez" loading="lazy" /><div class="about-image__decoration"></div></div>
-          <div class="about-content">
-            <span class="section-tag">About</span>
-            <h2 class="section-title">From Data Analyst to Automation Expert</h2>
-            <p>I'm a Microsoft Power Platform specialist with over 10 years of experience helping businesses eliminate time-consuming manual processes. My background in data analysis gives me a unique perspective on both technical implementation and business impact.</p>
-            <p>I work primarily with companies in the US, UK, and Australia, providing automation solutions that typically pay for themselves within 3-6 months. My specialty is connecting systems that don't naturally talk to each other and building custom applications that solve real business problems.</p>
-            <div class="about-highlights">
-              <div class="highlight"><span class="highlight-number">10+</span><span class="highlight-label">Years Experience</span></div>
-              <div class="highlight"><span class="highlight-number">95%</span><span class="highlight-label">Client Satisfaction</span></div>
-              <div class="highlight"><span class="highlight-number">15+</span><span class="highlight-label">Projects Delivered</span></div>
-            </div>
-            <div class="about-cta">
-              <a href="https://github.com/iamahlramz" class="btn btn--outline" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
-              <a href="https://www.linkedin.com/in/iamahlramz" class="btn btn--outline" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./images/allan-ramirez-fun.jpg" alt="Allan Ramirez" loading="lazy" />
+          </div>
+          <div class="about-info">
+            <h2 class="about-name">Allan Ramirez</h2>
+            <p class="about-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Lipa, Batangas, Philippines
+            </p>
+            <p class="about-bio">Developer and consultant building tools and providing services across multiple time zones. Passionate about creating software that solves real problems.</p>
+            <div class="about-social">
+              <a href="https://github.com/iamahlramz" class="social-link" target="_blank" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/iamahlramz" class="social-link" target="_blank" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto:iamahlramz253@gmail.com" class="social-link" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -334,74 +261,23 @@
     </section>
   </main>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <span class="section-tag">Get in Touch</span>
-          <h2 class="section-title">Ready to Automate?</h2>
-          <p>Let's discuss how automation can transform your business operations. Free 30-minute consultation included.</p>
-          <div class="contact-links">
-            <a href="mailto:iamahlramz253@gmail.com" class="contact-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>iamahlramz253@gmail.com</span></a>
-            <a href="https://www.linkedin.com/in/iamahlramz" class="contact-link" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span>linkedin.com/in/iamahlramz</span></a>
-            <a href="https://github.com/iamahlramz" class="contact-link" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg><span>github.com/iamahlramz</span></a>
-          </div>
-          <div class="contact-availability"><span class="availability-dot"></span>Available in PH, AU, UK, US time zones</div>
-        </div>
-        <div class="contact-form-wrapper">
-          <form class="contact-form" action="https://formspree.io/f/mnnbldkr" method="POST">
-            <div class="form-row">
-              <div class="form-group"><label for="name">Name *</label><input type="text" id="name" name="name" required></div>
-              <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required></div>
-            </div>
-            <div class="form-group"><label for="company">Company</label><input type="text" id="company" name="company"></div>
-            <div class="form-group"><label for="message">What processes need automation?</label><textarea id="message" name="message" rows="4" placeholder="e.g., Invoice reconciliation, manual data entry, repetitive reporting..."></textarea></div>
-            <button type="submit" class="btn btn--primary btn--full"><span>Send Message</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-brand"><span class="nav__logo">AR</span><p>&copy; 2025 Allan Ramirez. Business Process Automation Expert.</p></div>
-        <div class="footer-links"><a href="#top">Back to Top</a><a href="https://github.com/iamahlramz" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/iamahlramz" target="_blank">LinkedIn</a></div>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/iamahlramz" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a href="https://github.com/iamahlramz" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-          <a href="mailto:iamahlramz253@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <div class="footer-brand">
+          <span class="nav__logo">AR</span>
+          <p>&copy; 2025 Allan Ramirez. Built by iamahlramz.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./portfolio/">Portfolio</a>
+          <a href="https://github.com/iamahlramz" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/iamahlramz" target="_blank">LinkedIn</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <a href="#top" class="back-to-top" id="backToTop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg></a>
-
-  <!-- Modals -->
-  <div id="automationGallery" class="modal">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-      <button class="modal__close">&times;</button>
-      <div class="gallery__slide active"><h3>Email Attachment Processing</h3><div class="gallery__slide-content"><div class="workflow-diagram"><div class="workflow-step"><div class="workflow-icon">📧</div><span>Email</span></div><span class="workflow-arrow">→</span><div class="workflow-step"><div class="workflow-icon">⚙️</div><span>Automate</span></div><span class="workflow-arrow">→</span><div class="workflow-step"><div class="workflow-icon">☁️</div><span>SharePoint</span></div><span class="workflow-arrow">→</span><div class="workflow-step"><div class="workflow-icon">📊</div><span>Power BI</span></div></div><div class="gallery__details"><p>Automated daily sales data processing. Eliminated 12.5 hours weekly.</p><div class="roi-badge">97% time reduction</div></div></div></div>
-      <div class="gallery__slide"><h3>API Change Notifications</h3><div class="gallery__slide-content"><div class="gallery__details"><p>Real-time monitoring with instant Teams alerts.</p><div class="roi-badge">99.9% uptime</div></div></div></div>
-      <div class="gallery__slide"><h3>Email Work Order Automation</h3><div class="gallery__slide-content"><div class="gallery__details"><p>Automated workflow from email to job management.</p><div class="roi-badge">40% faster response</div></div></div></div>
-      <div class="gallery__slide"><h3>ServiceTitan to Xero Integration</h3><div class="gallery__slide-content"><div class="workflow-diagram"><div class="workflow-step"><div class="workflow-icon">ST</div><span>ServiceTitan</span></div><span class="workflow-arrow">→</span><div class="workflow-step"><div class="workflow-icon">PP</div><span>Power Platform</span></div><span class="workflow-arrow">→</span><div class="workflow-step"><div class="workflow-icon">X</div><span>Xero</span></div></div><div class="gallery__details"><p>Eliminated 1 FTE. Bi-directional sync for 100+ daily invoices.</p><div class="roi-badge">400% ROI</div></div></div></div>
-      <div class="gallery__navigation"><button class="gallery__btn gallery__btn--prev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15,18 9,12 15,6"></polyline></svg></button><span class="gallery__counter">1 / 4</span><button class="gallery__btn gallery__btn--next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"></polyline></svg></button></div>
-    </div>
-  </div>
-
-  <div id="powerbiGallery" class="modal">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-      <button class="modal__close">&times;</button>
-      <div class="gallery__slide active"><h3>Power BI Dashboards</h3><div class="gallery__slide-content"><img src="./images/pbi-adventureworks-1-home.jpg" alt="Power BI Dashboard" class="gallery__image"><div class="gallery__details"><p>Interactive Power BI solutions with drill-through capabilities.</p></div></div></div>
-      <div class="gallery__navigation"><button class="gallery__btn gallery__btn--prev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15,18 9,12 15,6"></polyline></svg></button><span class="gallery__counter">1 / 1</span><button class="gallery__btn gallery__btn--next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"></polyline></svg></button></div>
-    </div>
-  </div>
-
-  <script src="./index.js"></script>
+  <script src="landing.js"></script>
 </body>
 </html>
