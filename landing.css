@@ -643,6 +643,8 @@ section {
   align-items: flex-start;
   gap: var(--space-6);
   margin-bottom: var(--space-6);
+  position: relative;
+  z-index: 2;
 }
 
 .project-card--featured .project-card__visual {
@@ -679,12 +681,16 @@ section {
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   margin-bottom: var(--space-6);
+  position: relative;
+  z-index: 2;
 }
 
 .project-card--featured .project-card__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .project-card--featured .project-card__footer .project-tags {
