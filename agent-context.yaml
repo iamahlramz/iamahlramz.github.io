@@ -1,0 +1,72 @@
+project:
+  name: "Portfolio"
+  slug: "portfolio"
+  type: static-site
+  status: active
+  platform: ANY
+  description: "Personal portfolio website -- iamaramirez.github.io"
+
+stack:
+  languages: ["HTML", "CSS", "JavaScript"]
+  frontend:
+    framework: ""
+    build_tool: ""
+    styling: ""
+    state_management: ""
+    routing: ""
+  backend:
+    framework: ""
+    runtime: ""
+    api_style: ""
+  database:
+    primary: ""
+    orm: ""
+    migrations: ""
+    cache: none
+  auth:
+    provider: none
+    methods: []
+    session_type: ""
+  queue: none
+  ai:
+    provider: none
+    usage: none
+
+architecture:
+  pattern: ""
+  key_patterns: []
+  adr_location: ""
+  architecture_doc: ""
+
+security:
+  model: none
+  sensitive_data: []
+  secrets_management: ""
+  auth_boundary: ""
+
+deployment:
+  target: "github-pages"
+  containerized: false
+  ci_cd: "github-actions"
+  ports:
+    api: ""
+    client: ""
+
+testing:
+  framework: ""
+  coverage_target: ""
+  test_types: []
+  test_location: ""
+
+monetization:
+  model: none
+  tiers: []
+  payment_provider: none
+
+related_projects: []
+
+custom_context:
+  key_concepts:
+    - "Static portfolio site hosted on GitHub Pages"
+  critical_rules: []
+  known_pitfalls: []
